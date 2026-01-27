@@ -1,14 +1,14 @@
-📊 Predictive Modeling and Statistical Learning
+Predictive Modeling and Statistical Learning
 
 A supervised learning project focused on model comparison, evaluation, and selection using a large structured dataset.
 
-🔍 Overview
+Overview
 
 This project compares multiple statistical and machine learning models to predict a continuous response variable using a large dataset. The objective was to evaluate predictive performance, understand bias variance tradeoffs, and select a final model based on out of sample accuracy.
 
 The work emphasizes rigorous validation, model interpretability, and practical decision making, rather than black box optimization.
 
-🗂️ Dataset
+Dataset
 - ~20,000 observations
 - 19 predictor variables
 - Continuous target variable
@@ -16,7 +16,7 @@ The work emphasizes rigorous validation, model interpretability, and practical d
 - Training dataset for model development and validation
 - Test predictor dataset used for final prediction generation
 
-🧠 Modeling Approach
+Modeling Approach
 1. Baseline Model
 - Least Squares Regression
 - Used as a benchmark for comparison
@@ -35,20 +35,20 @@ The work emphasizes rigorous validation, model interpretability, and practical d
 - Gradient Boosting using XGBoost
 - Tree based methods were applied to capture nonlinear relationships not addressed by linear models.
 
-📈 Model Evaluation
+Model Evaluation
 
 - 10 fold cross validation applied consistently across models
 - Mean Squared Prediction Error (MSPE) used as the primary evaluation metric
 - Random Forest achieved the lowest MSPE after tuning mtry and ntree
 - Final model selected based on predictive accuracy and stability
 
-✅ Key Findings
+Key Findings
 
 - Regularization did not outperform least squares due to strong signal across predictors
 - Single regression trees reduced error but exhibited high variance
 - Ensemble methods significantly improved predictive accuracy through variance reduction
 - A tuned Random Forest best captured complex nonlinear relationships
 
-🛠️ Tools and Technologies
+Tools and Technologies
 - Language: R
 - Libraries: tidyverse, glmnet, rpart, randomForest, xgboost
